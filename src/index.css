@@ -5723,7 +5723,7 @@ input[type="text"]:focus::placeholder {
 
 .com-search__submit {
   margin-left: 10px;
-  display: none;
+  /* display: none; */
 }
 
 .com-search .icon-search {
@@ -6811,4 +6811,3 @@ article a.figure:before {
 .rolling .mod-newsletter {
   background-color: #b40d15;
 }
-/*# sourceMappingURL=site.css.map */

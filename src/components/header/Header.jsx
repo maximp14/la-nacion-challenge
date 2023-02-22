@@ -23,11 +23,20 @@ const Header = () => {
                 className="com-search__input"
                 placeholder="Buscar"
                 value={search}
-                onChange={(e) => setSearch(e.target.value)}
+                onChange={(e) => {
+                  setSearch(e.target.value);
+                }}
               />
-              <i className="icon-search">
-                <BiSearchAlt2 />
-              </i>
+
+              {!search ? (
+                <i className="icon-search">
+                  <BiSearchAlt2 />
+                </i>
+              ) : (
+                <button className="--btn --primary com-search__submit">
+                  Buscar
+                </button>
+              )}
             </form>
           </div>
           <div className="col-4  header__middle">
@@ -35,6 +44,7 @@ const Header = () => {
               <img
                 className="logo-la-nacion"
                 src={logo}
+                alt="logo"
                 style={{ width: "307px", height: "31px" }}
               />
             </a>
