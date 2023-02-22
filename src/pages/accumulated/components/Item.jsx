@@ -12,6 +12,7 @@ const Item = ({ article }) => {
               src={article.promo_items.basic.url}
               alt=""
               className="content-img"
+              style={{ width: "300px" }}
             />
           </picture>
         </a>
