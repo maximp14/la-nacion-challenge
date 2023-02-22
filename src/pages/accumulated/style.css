@@ -1,0 +1,27 @@
+.sidebar__main .com-tag {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+@media (min-width: 768px) {
+  .sidebar__main .hlp-overflow-scroll {
+    overflow: hidden;
+  }
+  .sidebar__main .com-tag {
+    width: auto;
+    overflow: hidden;
+    display: inline-block;
+  }
+}
+
+.com-date {
+  font: 400 0.875rem "Arial", "sans-serif";
+  color: #5a5a5a;
+  margin-top: 0.375em;
+}

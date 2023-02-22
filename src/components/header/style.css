@@ -1,0 +1,267 @@
+@media (min-width: 64em) {
+  .header {
+    display: block;
+    border-bottom: 1px solid #cccccc;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    -webkit-transition: -webkit-transform 0.25s;
+    transition: -webkit-transform 0.25s;
+    transition: transform 0.25s;
+    transition: transform 0.25s, -webkit-transform 0.25s;
+  }
+  .header__left {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100px 1fr;
+    grid-template-columns: 100px 1fr;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .header__middle {
+    text-align: center;
+  }
+  .header__middle .logo-la-nacion {
+    color: #006998;
+    font-size: 31px;
+  }
+  .header__right {
+    margin-left: auto;
+    text-align: right;
+  }
+  .header.--scrollDown {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+  .header.--scrollUp {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  .header.--active-search .header__left {
+    -ms-flex-preferred-size: 60%;
+    flex-basis: 60%;
+    max-width: 60%;
+  }
+  .header.--active-search .header__left .com-search__submit {
+    display: inline-block;
+  }
+  .header.--active-search .header__left .com-search__input {
+    width: 80%;
+  }
+  .header.--active-search .header__left .com-search .icon-search {
+    display: none;
+  }
+  .header.--active-search .header__middle {
+    display: none;
+  }
+  .header.--active-menu .com-hamburger__bar:nth-child(1) {
+    -webkit-transform: translateY(0) rotate(-45deg);
+    transform: translateY(0) rotate(-45deg);
+  }
+  .header.--active-menu .com-hamburger__bar:nth-child(2) {
+    opacity: 0;
+  }
+  .header.--active-menu .com-hamburger__bar:nth-child(3) {
+    -webkit-transform: translateY(0) rotate(45deg);
+    transform: translateY(0) rotate(45deg);
+  }
+  .header.--active-menu .com-hamburger:before {
+    content: "CERRAR";
+  }
+  .header.--active-dark {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .header.--active-dark .header__left .com-hamburger__bar {
+    background-color: #fff;
+  }
+  .header.--active-dark .header__left .com-hamburger:before {
+    color: #fff;
+  }
+  .header.--active-dark .header__left .com-search__input {
+    color: #fff;
+  }
+  .header.--active-dark
+    .header__left
+    .com-search__input::-webkit-input-placeholder {
+    color: #cccccc;
+  }
+  .header.--active-dark .header__left .com-search__input:-ms-input-placeholder {
+    color: #cccccc;
+  }
+  .header.--active-dark
+    .header__left
+    .com-search__input::-ms-input-placeholder {
+    color: #cccccc;
+  }
+  .header.--active-dark .header__left .com-search__input::placeholder {
+    color: #cccccc;
+  }
+  .header.--active-dark .header__left .com-search__submit {
+    background: #fff;
+    color: #0074c4;
+  }
+  .header.--active-dark .header__left .com-search .icon-search {
+    color: #fff;
+  }
+  .header.--active-dark .header__middle .logo-la-nacion {
+    color: #fff;
+  }
+  .header.--active-dark .header__right .com-usuario__name {
+    color: #fff;
+  }
+  .header.--active-dark .header__right .com-usuario__name:before {
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+  }
+  .header.--active-dark .header__right .com-usuario__valueSuscrib {
+    color: #cccccc;
+  }
+  .header.--active-dark .header__right .--btn.--secondary {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+  }
+}
+
+.com-hamburger {
+  position: relative;
+  width: 23px;
+  height: 18px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.com-hamburger__bar {
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+  -webkit-transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+  transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease,
+    -webkit-transform 0.3s ease;
+}
+
+.com-hamburger__bar:nth-child(1) {
+  -webkit-transform-origin: right top;
+  transform-origin: right top;
+}
+
+.com-hamburger__bar:nth-child(2) {
+  -webkit-transform-origin: right center;
+  transform-origin: right center;
+}
+
+.com-hamburger__bar:nth-child(3) {
+  -webkit-transform-origin: right bottom;
+  transform-origin: right bottom;
+}
+
+.com-hamburger:before {
+  content: "MENÚ";
+  position: absolute;
+  width: 60px;
+  left: 35px;
+  top: 4px;
+  font-size: 12px;
+  font-family: Arial;
+  text-transform: uppercase;
+}
+
+.com-search {
+  position: relative;
+}
+
+.com-search__input {
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  position: relative;
+  z-index: 100;
+  background: transparent;
+  width: 191px;
+}
+
+.com-search__submit {
+  margin-left: 10px;
+  display: none;
+}
+
+.com-search .icon-search {
+  position: ABSOLUTE;
+  left: 160px;
+  z-index: 150;
+  font-size: 26px;
+  top: 6px;
+}
+
+.com-usuario {
+  font-family: Arial;
+  line-height: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.header.--active-search .header__left {
+  -ms-flex-preferred-size: 60%;
+  flex-basis: 60%;
+  max-width: 60%;
+}
+
+.header.--active-search .header__left .com-search__submit {
+  display: inline-block;
+}
+.header.--active-search .header__left .com-search__input {
+  width: 80%;
+}
+.header.--active-search .header__left .com-search .icon-search {
+  display: none;
+}
+.header.--active-search .header__middle {
+  display: none;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "LNicons" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  font-size: 2rem;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.header-mobile .header-mobile__logo .logo-la-nacion {
+  color: #006998;
+  font-size: 17px;
+}
+
+.header-mobile.--active-dark a .logo-la-nacion {
+  color: #fff;
+}
+
+.logo-la-nacion:before {
+  content: "\e806";
+}

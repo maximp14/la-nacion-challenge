@@ -1,0 +1,297 @@
+footer {
+  margin-bottom: 1.25em;
+}
+
+footer .footer-header {
+  margin-bottom: 1.25em;
+}
+
+@media (min-width: 64em) {
+  footer .footer-header {
+    padding-bottom: 0.9375em;
+    border-bottom: 1px solid #cccccc;
+  }
+}
+
+footer .footer-header .footer-header__logo {
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 1.25em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media (min-width: 64em) {
+  footer .footer-header .footer-header__logo {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+}
+
+footer .footer-header .footer-header__logo .logo-la-nacion {
+  font-size: 22px;
+  color: #006998;
+}
+
+footer .footer-header .footer-header__logo a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+footer .footer-header .footer-header__redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media (min-width: 64em) {
+  footer .footer-header .footer-header__redes {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+}
+
+@media (min-width: 1024px) {
+  footer .footer-header .footer-header__redes {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+footer .footer-header .footer-header__redes a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+footer .footer-header .footer-header__redes i {
+  margin-right: 1.25em;
+}
+
+@media (max-width: 1023px) {
+  footer .footer-header .footer-header__redes i {
+    margin: 0.625em;
+  }
+}
+
+footer .footer-header .footer-header__app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media (min-width: 64em) {
+  footer .footer-header .footer-header__app {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+}
+
+footer .footer-header .footer-header__app .app_ios {
+  margin-left: 1.875em;
+}
+
+footer .footer-sitio {
+  margin-bottom: 1.25em;
+}
+
+footer .footer-sitio .footer-sitio__links {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  footer .footer-sitio .footer-sitio__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+footer .footer-sitio .footer-sitio__links .item_link {
+  font-size: 0.875rem;
+  color: #0074c4;
+  margin-right: 1.3125em;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+footer .footer-sitio .footer-sitio__captcha {
+  line-height: 1.125em;
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  footer .footer-sitio .footer-sitio__captcha {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+footer .footer-sitio .footer-sitio__captcha p {
+  color: #5a5a5a;
+  font-size: 0.875em;
+  line-height: 1.25em;
+  /*height: fit-content;
+                  width: fit-content;*/
+  text-align: right;
+  width: 100%;
+}
+
+footer .footer-sitio .footer-sitio__captcha p a {
+  color: #0074c4;
+  margin-left: 0.9375em;
+}
+
+footer .footer-sitio .footer-sitio__captcha .private {
+  font-size: 0.875rem;
+  line-height: 1.125em;
+}
+
+footer .footer-sitio .footer-sitio__captcha .condition {
+  font-size: 0.875rem;
+  line-height: 1.125em;
+}
+
+footer .footer-copyright {
+  margin-bottom: 1.25em;
+}
+
+footer .footer-copyright .footer-copyright__fiscal {
+  /*.fiscal_row {
+                  width: 100%;
+                  @media (min-width: 1024px) {
+                      display: flex;
+                      justify-content: flex-end;
+                  }
+                  .logo-gda {
+                      display: flex;
+                      flex-direction: row-reverse;
+                      @media (max-width: 1023px) {
+                          align-items: center;
+                      }
+                      @media (min-width: 1024px) {
+                          margin-top: -10px;
+                      }
+                  }
+                  .gda {
+                      font-family: Arial, "sans-serif";
+                      font-size: $font-14;
+                      line-height: $px-20;
+                      display: flex;
+                      justify-content: center;
+                      @media (max-width: 1023px) {
+                          align-items: center;
+                      }
+                      .img_gda {
+                          height: $px-15;
+                      }
+                  }
+                  .data-fiscal {
+                      .img_data-fiscal {
+                          width: $px-35;
+                      }
+                  }
+              }*/
+}
+
+footer .footer-copyright .footer-copyright__fiscal p {
+  color: #5a5a5a;
+  font-size: 0.875em;
+  line-height: 1.25em;
+  /*height: fit-content;
+                  width: fit-content;*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  vertical-align: top;
+  text-align: left;
+  margin: -20px 0 20px 0;
+}
+
+footer .footer-copyright .footer-copyright__fiscal p .img_gda {
+  margin: 0 15px 0 -5px;
+}
+
+footer .footer-copyright .footer-copyright__fiscal p a {
+  margin-left: 15px;
+}
+
+footer .footer-copyright .footer-copyright__fiscal p a .img_data-fiscal {
+  width: 2.1875em;
+}
+
+@media (min-width: 64em) {
+  footer .footer-copyright .footer-copyright__fiscal {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+  footer .footer-copyright .footer-copyright__fiscal p {
+    text-align: right;
+    width: 100%;
+    margin: -6px 0 0 0;
+    display: block;
+  }
+  footer .footer-copyright .footer-copyright__fiscal p a {
+    float: right;
+    margin-top: 8px;
+  }
+}
+
+footer .footer-copyright .footer-copyright__reserved {
+  font-size: 0.875rem;
+  line-height: 1.5em;
+  color: #5a5a5a;
+  text-align: center;
+}
+
+@media (min-width: 64em) {
+  footer .footer-copyright .footer-copyright__reserved {
+    text-align: left;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+}

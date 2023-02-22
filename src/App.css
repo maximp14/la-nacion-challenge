@@ -1,0 +1,15 @@
+#wrap {
+  position: relative;
+  margin-bottom: 80px;
+}
+
+@media (min-width: 1023px) {
+  #wrap {
+    margin-bottom: 0;
+  }
+}
+
+/* revisar este */
+div {
+  display: block;
+}
